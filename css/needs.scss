@@ -1,0 +1,16 @@
+@font-face{
+    font-family: H300;
+    src: url(../font/HelveticaNeueCyr-Light.woff2);
+}
+
+@font-face{
+    font-family: H400;
+    src: url(../font/HelveticaNeueCyr-Roman.woff2);
+}
+
+@mixin txt ($color, $line-height, $font-size, $font-family) {
+    color: $color;
+    line-height: $line-height;
+    font-size: $font-size;
+    font-family: $font-family;
+}
