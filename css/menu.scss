@@ -176,7 +176,7 @@
 
 @media (max-width: 768px){
     .header {
-        max-width: 768px;
+        width: 768px;
         display: flex;
         justify-content: space-around;
         padding: 5px 0 0 0;
@@ -450,7 +450,7 @@
 
 @media (max-width: 425px){
     .header {
-        max-width: 425px;
+        width: 425px;
 
         #burger-menu:checked~nav {
             width: 425px;
@@ -519,7 +519,7 @@
 
 @media (max-width: 375px){
     .header {
-        max-width: 375px;
+        width: 375px;
 
         #burger-menu:checked~nav {
             width: 100%;
@@ -550,7 +550,7 @@
 
         .container {
             .main {
-                max-width: 375px;
+                width: 375px;
 
                 .photo {
                     width: 375px;
@@ -568,10 +568,6 @@
                         }
                     }
                 }
-            }
-
-            .footer-mob {
-                width: 375px;
             }
         }
     }
@@ -602,7 +598,7 @@
 
 @media (max-width: 320px){
     .header {
-        max-width: 320px;
+        width: 320px;
 
         &-logo{
             padding: 0 10px 0 0;

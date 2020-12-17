@@ -237,7 +237,7 @@
     }
 
     .header {
-        max-width: 768px;
+        width: 768px;
         display: flex;
         justify-content: space-around;
         padding: 5px 0 0 0;
@@ -245,7 +245,7 @@
         // position: relative;
         &-logo {
             order: 2;
-            margin: 0 0 0 -5px;
+            margin: 0 0 0 -45px;
         }
 
         #burger-menu:checked~nav {
@@ -350,6 +350,7 @@
             background-color: $c6;
             border-radius: 51.5px;
             padding: 8px 10px;
+            margin: 0 0 0 -20px;
             position: relative;
 
             &-number {
@@ -371,20 +372,14 @@
                 outline: none;
             }
         }
-
-        &-text{
-            width: 100%;
-            @include txt($c1, 15px, 12px, H400);
-            text-align: center;
-            margin: 30px 0 0 0;
-        }
     }
 
     .container {
         background-image: none;
+        padding: 0 0 80px 0;
 
         .main {
-            max-width: 768px;
+            width: 768px;
             flex-direction: column-reverse;
 
             .list-mob {
@@ -458,12 +453,13 @@
             min-height: 38px;
             background-color: #f7f7f7;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
-            padding: 9px 0 0 0;
+            padding: 9px 0 5px 0;
             position: fixed;
             bottom: 0;
             left: 0;
-
+    
             &-basket {
                 display: block;
                 border: none;
@@ -474,7 +470,7 @@
                 position: relative;
                 position: absolute;
                 top: -23.5px;
-
+    
                 &-number {
                     background: #FFFFFF;
                     border: 1px solid #FF2727;
@@ -484,30 +480,30 @@
                     position: absolute;
                     bottom: 23px;
                     left: 26px;
-
+    
                     output {
                         @include txt($c1, 14px, 10px, H300);
                     }
                 }
-
+    
                 &:focus {
                     outline: none;
                 }
             }
-        }
-
-        &-text{
-            width: 100%;
-            @include txt($c1, 15px, 12px, H400);
-            text-align: center;
-            margin: 30px 0 0 0;
+    
+            &-text{
+                width: 100%;
+                @include txt($c1, 15px, 12px, H400);
+                text-align: center;
+                margin: 30px 0 0 0;
+            }
         }
     }
 }
 
 @media (max-width: 425px) {
     .header {
-        max-width: 425px;
+        width: 425px;
 
         #burger-menu:checked~nav {
             width: 425px;
@@ -547,7 +543,7 @@
             }
 
             .list-mob {
-                width: 400px
+                width: 400px;
             }
         }
 
@@ -559,7 +555,7 @@
 
 @media (max-width: 375px) {
     .header {
-        max-width: 375px;
+        width: 375px;
 
         &-logo {
             padding: 0 0 0 35px;
@@ -594,7 +590,7 @@
 
         .container {
             .main {
-                max-width: 375px;
+                width: 375px;
 
                 .photo {
                     width: 375px;
@@ -620,14 +616,28 @@
         }
     }
 
+    .container{
+        .main{
+            width: 375px;
+            .photo{
+                width: 375px;
+                height: 212px;
+            }
+
+            .list-mob{
+                max-width: 350px;
+            }
+        }
+
     .footer-mob{
         width: 375px;
     }
 }
+}
 
 @media (max-width: 320px) {
     .header {
-        max-width: 320px;
+        width: 320px;
 
         &-logo {
             padding: 0 0 0 35px;
@@ -663,7 +673,7 @@
 
     .container {
         .main {
-            max-width: 320px;
+            width: 320px;
 
             .photo {
                 width: 320px;
