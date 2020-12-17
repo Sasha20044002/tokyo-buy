@@ -1,0 +1,116 @@
+.header {
+    width: 1204px;
+    margin: 0 auto;
+    min-height: 90px;
+    // border: 1px solid #000;
+    display: flex;
+    align-items: center;
+
+    &-logo {
+        margin: 0 25px 0 0;
+    }
+
+    &-nav {
+        width: 685px;
+        margin: 0 116px 0 0;
+        padding: 0;
+        display: flex;
+        .close{
+            display: none;
+        }
+
+        &-logo{
+            display: none;
+        }
+
+        &-tel-number {
+            width: 143px;
+            margin: 0 163px 0 0;
+
+            &-link {
+                @include txt($c1, 22px, 16px, H400);
+                display: block;
+                width: 138px;
+                text-decoration: none;
+            }
+
+            &-text {
+                @include txt($c2, 19px, 14px, H300);
+            }
+        }
+
+        &-list {
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            // justify-content: space-between;
+
+            &-item {
+                padding: 0;
+                margin: 0 100px 0 0;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                &-link {
+                    @include txt($c1, 22px, 16px, H400);
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    &:active {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &-basket {
+        display: flex;
+        align-items: center;
+
+        &-price {
+            margin: 0 20px 0 0;
+            width: 65px;
+            @include txt($c1, 22px, 16px, H400);
+
+            .red {
+                @include txt($c2, 19px, 14px, H400);
+            }
+        }
+
+        &-btn {
+            display: flex;
+            align-items: center;
+            border: none;
+            border-radius: 51.5px;
+            background-color: $c2;
+            box-sizing: border-box;
+            padding: 7px 15px 7px;
+            @include txt(#fff, 22px, 16px, H400);
+
+            &-bin {
+                display: block;
+                margin: 0 8px 0 0;
+                background-color: none;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    label[for="burger-menu"],
+    input[id="burger-menu"] {
+        display: none;
+    }
+
+    &-basket-mob {
+        display: none;
+    }
+}

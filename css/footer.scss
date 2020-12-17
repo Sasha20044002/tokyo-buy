@@ -1,0 +1,27 @@
+.footer {
+    width: 1205px;
+    height: 73px;
+    margin: 0 auto;
+    padding-bottom: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &-text {
+        width: 516px;
+        @include txt($c1, 19px, 14px, H300);
+        margin-top: 40px;
+        margin-left: 267px;
+    }
+
+    &-social{
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 150px;
+        
+        &-inst{
+            order: 1;
+            margin-left: 18px;
+        }
+    }
+}
