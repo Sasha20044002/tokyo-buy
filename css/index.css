@@ -443,6 +443,7 @@
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    margin: 0 0 0 -5px;
   }
   .header #burger-menu:checked ~ nav {
     left: 0;
@@ -742,42 +743,42 @@
     width: 100%;
     height: 100%;
   }
-  .header-nav {
+  .header #burger-menu:checked ~ nav-nav {
     -webkit-transition: all .5s;
     transition: all .5s;
   }
-  .header-nav-tel-number {
+  .header #burger-menu:checked ~ nav-nav-tel-number {
     width: 206px;
     margin: 0 0 0 -103px;
     position: absolute;
     top: 23.07%;
     left: 50%;
   }
-  .header-nav-tel-number-link {
+  .header #burger-menu:checked ~ nav-nav-tel-number-link {
     width: 100%;
     font-size: 24px;
     margin: 0 0 20px 0;
   }
-  .header-nav-tel-number-text {
+  .header #burger-menu:checked ~ nav-nav-tel-number-text {
     font-size: 20px;
   }
-  .container .main {
+  .header .container .main {
     max-width: 375px;
   }
-  .container .main .photo {
+  .header .container .main .photo {
     width: 375px;
     height: 212px;
   }
-  .container .main .list-mob {
+  .header .container .main .list-mob {
     width: 360px;
   }
-  .container .main .list-mob-item {
+  .header .container .main .list-mob-item {
     margin: 0;
   }
-  .container .main .list-mob-item:nth-child(1n) {
+  .header .container .main .list-mob-item:nth-child(1n) {
     margin: 0 5px 15px 0;
   }
-  .container .footer-mob {
+  .header .container .footer-mob {
     width: 375px;
   }
 }

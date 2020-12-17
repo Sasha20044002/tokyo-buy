@@ -15,7 +15,7 @@
         display: flex;
         align-items: center;
 
-        .list-mob{
+        .list-mob {
             display: none;
         }
 
@@ -187,7 +187,7 @@
         }
     }
 
-    .footer-mob{
+    .footer-mob {
         display: none;
     }
 
@@ -227,7 +227,7 @@
 }
 
 @media (max-width: 768px) {
-    body{
+    body {
         position: relative;
     }
 
@@ -236,12 +236,14 @@
         display: flex;
         justify-content: space-around;
         padding: 5px 0 0 0;
+
         // position: relative;
-        &-logo{
+        &-logo {
             order: 2;
+            margin: 0 0 0 -5px;
         }
 
-        #burger-menu:checked ~ nav{
+        #burger-menu:checked~nav {
             left: 0;
             width: 768px;
             height: 100%;
@@ -249,11 +251,11 @@
             background: white;
         }
 
-        #burger-menu:checked ~ .open {
+        #burger-menu:checked~.open {
             visibility: hidden;
         }
 
-        &-nav{
+        &-nav {
             width: 100%;
             height: 100%;
             margin: 0;
@@ -265,50 +267,51 @@
             top: 0;
             z-index: 4;
 
-            &-logo{
+            &-logo {
                 display: block;
                 position: absolute;
                 top: 20px;
                 left: 30px;
             }
 
-            &-tel-number{
+            &-tel-number {
                 width: 300px;
                 margin: 0 0 0 -71.5px;
                 position: absolute;
                 top: 40px;
                 left: 50%;
 
-                &-link{
+                &-link {
                     width: 100%;
                     font-size: 32px;
                     margin: 0 0 20px 0;
                 }
 
-                &-text{
+                &-text {
                     font-size: 28px;
                 }
             }
 
-            &-list{
+            &-list {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
                 height: 100%;
                 padding: 0;
+
                 // margin: -25% 0 0;
-                &-item{
+                &-item {
                     margin: 0 0 50px;
 
-                    &-link{
+                    &-link {
                         width: auto;
                         font-size: 36px;
                     }
                 }
             }
 
-            .close{
+            .close {
                 display: block;
                 @include txt($c1, 24px, 36px, M500);
                 position: absolute;
@@ -317,11 +320,11 @@
             }
         }
 
-        label[for="burger-menu"]{
+        label[for="burger-menu"] {
             order: 1;
         }
 
-        &-basket-mob{
+        &-basket-mob {
             order: 3;
         }
 
@@ -365,21 +368,22 @@
         }
     }
 
-    .container{
+    .container {
         background-image: none;
 
-        .main{
+        .main {
             max-width: 768px;
             flex-direction: column-reverse;
-            .list-mob{
+
+            .list-mob {
                 display: block;
             }
 
-            .list{
+            .list {
                 display: none;
             }
 
-            .photo{
+            .photo {
                 width: 768px;
                 height: 435px;
                 margin: 0 0 17px 0;
@@ -387,14 +391,14 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 position: relative;
-                
-                &-radio{
+
+                &-radio {
                     position: absolute;
-                    bottom: 15px !important; 
+                    bottom: 15px !important;
                 }
             }
 
-            .list-mob{
+            .list-mob {
                 width: 740px;
                 margin: 0 auto;
                 padding: 0;
@@ -404,7 +408,7 @@
                 justify-content: center;
                 list-style-type: none;
 
-                &-item{
+                &-item {
                     width: 175px;
                     height: 119px;
                     background-image: url(../img/rolls_3.png);
@@ -412,11 +416,11 @@
                     margin: 0 10px 15px 0;
                     position: relative;
 
-                    &:nth-child(4n){
+                    &:nth-child(4n) {
                         margin: 0 0 15px 0;
                     }
 
-                    &-link{
+                    &-link {
                         @include txt(#fff, 24px, 20px, M500);
                         text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
                         text-decoration: none;
@@ -431,11 +435,11 @@
             }
         }
 
-        .footer{
+        .footer {
             display: none;
         }
 
-        .footer-mob{
+        .footer-mob {
             display: block;
             position: relative;
             width: 768px;
@@ -443,10 +447,11 @@
             background-color: #f7f7f7;
             display: flex;
             justify-content: space-around;
-            padding: 9px 0 0 0;            
+            padding: 9px 0 0 0;
             position: fixed;
             bottom: 0;
             left: 0;
+
             &-basket {
                 display: block;
                 border: none;
@@ -457,7 +462,7 @@
                 position: relative;
                 position: absolute;
                 top: -23.5px;
-    
+
                 &-number {
                     background: #FFFFFF;
                     border: 1px solid #FF2727;
@@ -467,12 +472,12 @@
                     position: absolute;
                     bottom: 23px;
                     left: 26px;
-    
+
                     output {
                         @include txt($c1, 14px, 10px, H300);
                     }
                 }
-    
+
                 &:focus {
                     outline: none;
                 }
@@ -481,180 +486,188 @@
     }
 }
 
-@media (max-width: 425px){
-    .header{
+@media (max-width: 425px) {
+    .header {
         max-width: 425px;
 
-        #burger-menu:checked ~ nav{
+        #burger-menu:checked~nav {
             width: 425px;
             height: 100%;
         }
 
-        &-nav{
+        &-nav {
             transition: all .5s;
-            &-tel-number{
+
+            &-tel-number {
                 width: 206px;
                 margin: 0 0 0 -103px;
                 position: absolute;
                 top: 150px;
                 left: 50%;
 
-                &-link{
+                &-link {
                     width: 100%;
                     font-size: 24px;
                     margin: 0 0 20px 0;
                 }
 
-                &-text{
+                &-text {
                     font-size: 20px;
                 }
             }
         }
     }
 
-    .container{
-        .main{
+    .container {
+        .main {
             max-width: 425px;
 
-            .photo{
+            .photo {
                 width: 425px;
                 height: 240px;
             }
 
-            .list-mob{
+            .list-mob {
                 width: 400px
             }
         }
 
-        .footer-mob{
+        .footer-mob {
             width: 425px;
         }
     }
 }
 
-@media (max-width: 375px){
-    .header{
+@media (max-width: 375px) {
+    .header {
         max-width: 375px;
-        &-logo{
+
+        &-logo {
             padding: 0 0 0 35px;
         }
 
-        #burger-menu:checked ~ nav{
+        #burger-menu:checked~nav {
             width: 100%;
             height: 100%;
-        &-nav{
-            transition: all .5s;
-            &-tel-number{
-                width: 206px;
-                margin: 0 0 0 -103px;
-                position: absolute;
-                top: 23.07%;
-                left: 50%;
 
-                &-link{
-                    width: 100%;
-                    font-size: 24px;
-                    margin: 0 0 20px 0;
-                }
+            &-nav {
+                transition: all .5s;
 
-                &-text{
-                    font-size: 20px;
-                }
-            }
-        }
-    }
+                &-tel-number {
+                    width: 206px;
+                    margin: 0 0 0 -103px;
+                    position: absolute;
+                    top: 23.07%;
+                    left: 50%;
 
-    .container{
-        .main{
-            max-width: 375px;
+                    &-link {
+                        width: 100%;
+                        font-size: 24px;
+                        margin: 0 0 20px 0;
+                    }
 
-            .photo{
-                width: 375px;
-                height: 212px;
-            }
-
-            .list-mob{
-                width: 360px;
-
-                &-item{
-                    margin: 0;
-
-                    &:nth-child(1n){
-                        margin: 0 5px 15px 0;
+                    &-text {
+                        font-size: 20px;
                     }
                 }
             }
         }
 
-        .footer-mob{
-            width: 375px;
+        .container {
+            .main {
+                max-width: 375px;
+
+                .photo {
+                    width: 375px;
+                    height: 212px;
+                }
+
+                .list-mob {
+                    width: 360px;
+
+                    &-item {
+                        margin: 0;
+
+                        &:nth-child(1n) {
+                            margin: 0 5px 15px 0;
+                        }
+                    }
+                }
+            }
+
+            .footer-mob {
+                width: 375px;
+            }
         }
     }
 }
 
-@media (max-width: 320px){
-    .header{
+@media (max-width: 320px) {
+    .header {
         max-width: 320px;
-        &-logo{
+
+        &-logo {
             padding: 0 0 0 35px;
         }
 
-        #burger-menu:checked ~ nav{
+        #burger-menu:checked~nav {
             width: 100%;
             height: 100%;
         }
 
-        &-nav{
+        &-nav {
             transition: all .5s;
-            &-tel-number{
+
+            &-tel-number {
                 width: 206px;
                 margin: 0 0 0 -103px;
                 position: absolute;
                 top: 150px;
                 left: 50%;
 
-                &-link{
+                &-link {
                     width: 100%;
                     font-size: 24px;
                     margin: 0 0 20px 0;
                 }
 
-                &-text{
+                &-text {
                     font-size: 20px;
                 }
             }
         }
     }
 
-    .container{
-        .main{
+    .container {
+        .main {
             max-width: 320px;
 
-            .photo{
+            .photo {
                 width: 320px;
                 height: 181px;
             }
 
-            .list-mob{
+            .list-mob {
                 width: 300px;
 
-                &-item{
+                &-item {
                     margin: 0 0 15px;
                 }
             }
         }
 
-        .footer-mob{
+        .footer-mob {
             width: 320px;
         }
     }
 }
 
-@media (max-height: 540px){
-    .header{
-        &-nav{
+@media (max-height: 540px) {
+    .header {
+        &-nav {
             transition: all .5s;
-            &-tel-number{
+
+            &-tel-number {
                 width: 206px;
                 margin: 0 0 0 -103px;
                 position: absolute;
