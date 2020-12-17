@@ -295,8 +295,9 @@
                 justify-content: center;
                 align-items: center;
                 width: 100%;
+                height: 100%;
                 padding: 0;
-                margin: -25% 0 0;
+                // margin: -25% 0 0;
                 &-item{
                     margin: 0 0 50px;
 
@@ -547,7 +548,7 @@
                 width: 206px;
                 margin: 0 0 0 -103px;
                 position: absolute;
-                top: 150px;
+                top: 23.07%;
                 left: 50%;
 
                 &-link{
@@ -644,6 +645,20 @@
 
         .footer-mob{
             width: 320px;
+        }
+    }
+}
+
+@media (max-height: 540px){
+    .header{
+        &-nav{
+            &-tel-number{
+                width: 206px;
+                margin: 0 0 0 -103px;
+                position: absolute;
+                top: 78.7037%;
+                left: 50%;
+            }
         }
     }
 }
