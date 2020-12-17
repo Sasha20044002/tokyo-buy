@@ -237,7 +237,7 @@
     }
 
     .header {
-        width: 768px;
+        width: 100vw;
         display: flex;
         justify-content: space-around;
         padding: 5px 0 0 0;
@@ -250,7 +250,7 @@
 
         #burger-menu:checked~nav {
             left: 0;
-            width: 768px;
+            width: 100vw;
             height: 100%;
             margin: 0;
             background: white;
@@ -261,7 +261,7 @@
         }
 
         &-nav {
-            width: 100%;
+            width: 100vw;
             height: 100%;
             margin: 0;
             background: white;
@@ -379,7 +379,7 @@
         padding: 0 0 80px 0;
 
         .main {
-            width: 768px;
+            width: 100vw;
             flex-direction: column-reverse;
 
             .list-mob {
@@ -393,7 +393,7 @@
             .photo {
                 width: 768px;
                 height: 435px;
-                margin: 0 0 17px 0;
+                margin: 0 auto 17px;
                 background-image: url(../img/img2.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -503,10 +503,10 @@
 
 @media (max-width: 425px) {
     .header {
-        width: 425px;
+        width: 100vw;
 
         #burger-menu:checked~nav {
-            width: 425px;
+            width: 100vw;
             height: 100%;
         }
 
@@ -555,14 +555,14 @@
 
 @media (max-width: 375px) {
     .header {
-        width: 375px;
+        width: 100vw;
 
         &-logo {
             padding: 0 0 0 35px;
         }
 
         #burger-menu:checked~nav {
-            width: 100%;
+            width: 100vw;
             height: 100%;
 
             &-nav {
@@ -587,38 +587,11 @@
                 }
             }
         }
-
-        .container {
-            .main {
-                width: 375px;
-
-                .photo {
-                    width: 375px;
-                    height: 212px;
-                }
-
-                .list-mob {
-                    width: 360px;
-
-                    &-item {
-                        margin: 0;
-
-                        &:nth-child(1n) {
-                            margin: 0 5px 15px 0;
-                        }
-                    }
-                }
-            }
-
-            .footer-mob {
-                width: 375px;
-            }
-        }
     }
 
     .container{
         .main{
-            width: 375px;
+            width: 100vw;
             .photo{
                 width: 375px;
                 height: 212px;
@@ -626,25 +599,33 @@
 
             .list-mob{
                 max-width: 350px;
+
+                &-item {
+                    margin: 0;
+
+                    &:nth-child(1n) {
+                        margin: 0 5px 15px 0;
+                    }
+                }
             }
         }
 
     .footer-mob{
-        width: 375px;
+        width: 100vw;
     }
 }
 }
 
 @media (max-width: 320px) {
     .header {
-        width: 320px;
+        width: 100vw;
 
         &-logo {
             padding: 0 0 0 35px;
         }
 
         #burger-menu:checked~nav {
-            width: 100%;
+            width: 100vw;
             height: 100%;
         }
 
@@ -673,7 +654,7 @@
 
     .container {
         .main {
-            width: 320px;
+            width: 100vw;
 
             .photo {
                 width: 320px;
@@ -690,7 +671,7 @@
         }
 
         .footer-mob {
-            width: 320px;
+            width: 100vw;
         }
     }
 }
