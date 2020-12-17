@@ -222,6 +222,11 @@
 
         .footer {
             width: 1000px;
+
+            &-text{
+                width: 623px;
+                margin-left: 135px;
+            }
         }
     }
 }
@@ -365,6 +370,13 @@
             &:focus {
                 outline: none;
             }
+        }
+
+        &-text{
+            width: 100%;
+            @include txt($c1, 15px, 12px, H400);
+            text-align: center;
+            margin: 30px 0 0 0;
         }
     }
 
