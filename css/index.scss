@@ -479,3 +479,52 @@
         }
     }
 }
+
+@media (max-width: 425px){
+    .header{
+        max-width: 425px;
+
+        #burger-menu:checked ~ nav{
+            width: 425px;
+        }
+
+        &-nav{
+            &-tel-number{
+                width: 206px;
+                margin: 0 0 0 -103px;
+                position: absolute;
+                top: 150px;
+                left: 50%;
+
+                &-link{
+                    width: 100%;
+                    font-size: 24px;
+                    margin: 0 0 20px 0;
+                }
+
+                &-text{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .container{
+        .main{
+            max-width: 425px;
+
+            .photo{
+                width: 425px;
+                height: 240px;
+            }
+
+            .list-mob{
+                width: 400px
+            }
+        }
+
+        .footer-mob{
+            width: 425px;
+        }
+    }
+}
