@@ -616,6 +616,25 @@
 }
 }
 
+@media (max-width: 360px){
+    .header{
+        width: 360px;
+    }
+    .container{
+        .main{
+            width: 360px;
+            .photo{
+                width: 360px;
+                height: 204;
+            }
+        }
+        .footer-mob{
+            width: 360px;
+        }
+    }
+
+}
+
 @media (max-width: 320px) {
     .header {
         width: 100vw;
